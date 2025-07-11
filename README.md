@@ -1,13 +1,18 @@
-# First Agent
+# Langgraph agent with tool
 
-A production-ready project using LangChain and LangGraph.
+This is production implementation of an LLM with tools.
+This repo can be used as a reference for more complex LLM-based applications.
 
 ## Structure
-- `src/agents/`: Agent logic
-- `src/chains/`: LangChain chains
-- `src/graphs/`: LangGraph graphs
-- `src/config/`: Configuration files
-- `src/utils/`: Utility functions
+- `src/chains/`: handling chains 
+- `src/config/`: project settings and .env loading
+- `src/graphs/`: graph implementation
+- `src/models/`: ChatModel implementation
+- `src/nodes/`: graph's node definition
+- `src/prompts/`: prompts variables
+- `src/schemas/`: graph state and database models
+- `src/tools/`: llm tools definition
+- `src/utils/`: utilities and helper functions
 - `tests/`: Unit and integration tests
 - `main.py`: Entry point
 
@@ -20,4 +25,3 @@ pip install -r requirements.txt
 ```bash
 python main.py
 ```
-# statful-agent-template
